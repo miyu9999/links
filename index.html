@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>みゆ｜アプリまとめ</title>
+<meta name="description" content="みゆが個人開発した無料アプリのまとめページ。医学生向けの試験対策ツール、受験生向けの学習計画ツール、社会人向けの負荷診断ツール。">
+<style>
+  :root {
+    --bg: #F5F0E8;
+    --card: #FFFFFF;
+    --base: #E8DCC8;
+    --accent: #C77B58;
+    --ink: #6B5847;
+    --ink-soft: #8A7A68;
+    --line: #E3D8C8;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Hiragino Sans", "Yu Gothic", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px 64px;
+  }
+  .wrap {
+    width: 100%;
+    max-width: 420px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .name {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin: 0 0 6px;
+  }
+  .tagline {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    margin: 28px 0 10px 4px;
+  }
+  .section-label:first-of-type {
+    margin-top: 8px;
+  }
+  a.card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  a.card:active {
+    transform: scale(0.99);
+  }
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .card-name {
+    font-size: 15.5px;
+    font-weight: 700;
+  }
+  .card-arrow {
+    color: var(--accent);
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+  .card-desc {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin-top: 5px;
+  }
+  .card-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    font-weight: 700;
+    color: var(--accent);
+    background: #FBEEE0;
+    border-radius: 999px;
+    padding: 2px 9px;
+    margin-top: 8px;
+  }
+  footer {
+    margin-top: 36px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="name">みゆ🩺</p>
+    <p class="tagline">文系→独学1年で国立医、今は医学生4年目。<br>試験対策・受験・働き方まわりの無料アプリを個人開発しています。</p>
+  </header>
+
+  <p class="section-label">医学生向け・試験対策</p>
+
+  <a class="card" href="https://miyu9999.github.io/pdf-highlight-lite/" target="_blank" rel="noopener">
+    <div class="card-top">
+      <span class="card-name">でるとこライン</span>
+      <span class="card-arrow">→</span>
+    </div>
+    <div class="card-desc">レジュメ・過去問PDFを読ませると、教科書の「よく出るところ」を自動でハイライト。</div>
+    <span class="card-tag">無料・登録不要・外部送信なし</span>
+  </a>
+
+  <a class="card" href="https://miyu9999.github.io/exam-quiz-app/" target="_blank" rel="noopener">
+    <div class="card-top">
+      <span class="card-name">OSCEガチャ</span>
+      <span class="card-arrow">→</span>
+    </div>
+    <div class="card-desc">身体診察の出題項目をランダム表示。順番のヒントなしで抜けを確認する練習に。</div>
+    <span class="card-tag">無料・登録不要</span>
+  </a>
+
+  <p class="section-label">これから医学部を目指す人向け</p>
+
+  <a class="card" href="https://miyu9999.github.io/study-plan-maker/" target="_blank" rel="noopener">
+    <div class="card-top">
+      <span class="card-name">わりカレ</span>
+      <span class="card-arrow">→</span>
+    </div>
+    <div class="card-desc">志望校・残り期間・偏差値を入れると、参考書の総量を日数で割って日付つきの計画を作る。</div>
+    <span class="card-tag">無料・登録不要</span>
+  </a>
+
+  <p class="section-label">社会人・働く人向け</p>
+
+  <a class="card" href="https://miyu9999.github.io/shindan-checker/" target="_blank" rel="noopener">
+    <div class="card-top">
+      <span class="card-name">診断チェッカー</span>
+      <span class="card-arrow">→</span>
+    </div>
+    <div class="card-desc">業種・業務を選ぶだけで、負荷がどこに集中しているかが分かる簡易診断。</div>
+    <span class="card-tag">無料・登録不要</span>
+  </a>
+
+  <footer>
+    使ってみた感想、良かった点でも「ここ使いにくい」でも教えてもらえると嬉しいです🙏<br>
+    <a href="https://x.com/miyu_med_ai" target="_blank" rel="noopener">@miyu_med_ai</a>
+  </footer>
+
+</div>
+</body>
+</html>
